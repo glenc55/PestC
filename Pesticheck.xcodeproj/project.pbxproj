@@ -26,6 +26,7 @@
 		71ADD1D515B70E3300DBB294 /* tableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADD1D415B70E3300DBB294 /* tableView.m */; };
 		71B1A9FC15B84B8B0045D907 /* dataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B1A9FB15B84B8B0045D907 /* dataView.m */; };
 		71B1AA1315B85A800045D907 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B1AA1215B85A800045D907 /* QuartzCore.framework */; };
+		71D0F8FC165C43E900B8AAB3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71D0F8FB165C43E900B8AAB3 /* Default-568h@2x.png */; };
 		71D4071915ACACA800764CF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D4071815ACACA800764CF5 /* UIKit.framework */; };
 		71D4071B15ACACA800764CF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D4071A15ACACA800764CF5 /* Foundation.framework */; };
 		71D4071D15ACACA800764CF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D4071C15ACACA800764CF5 /* CoreGraphics.framework */; };
@@ -67,6 +68,7 @@
 		71B1A9FA15B84B8B0045D907 /* dataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataView.h; sourceTree = "<group>"; };
 		71B1A9FB15B84B8B0045D907 /* dataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataView.m; sourceTree = "<group>"; };
 		71B1AA1215B85A800045D907 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		71D0F8FB165C43E900B8AAB3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		71D4071415ACACA800764CF5 /* Pesticheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pesticheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D4071815ACACA800764CF5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		71D4071A15ACACA800764CF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -104,6 +106,7 @@
 		71D4070915ACACA800764CF5 = {
 			isa = PBXGroup;
 			children = (
+				71D0F8FB165C43E900B8AAB3 /* Default-568h@2x.png */,
 				71D4072015ACACA800764CF5 /* Pesticheck */,
 				71D4071715ACACA800764CF5 /* Frameworks */,
 				71D4071515ACACA800764CF5 /* Products */,
@@ -238,6 +241,7 @@
 				7158C96D15AE7AA00090A1C3 /* arrow1.png in Resources */,
 				7113F59D163485000092915A /* checkmark2.png in Resources */,
 				71592E03165C10A60054F90C /* wticon1.png in Resources */,
+				71D0F8FC165C43E900B8AAB3 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 //
 
 #import "tableView.h"
-#import "locationTable.h"
+
 @interface tableView ()
 
 @end
@@ -242,11 +242,7 @@
     if ([[segue identifier] isEqualToString:@"backToMain"]){
         mainView *mV = [segue destinationViewController];
         [mV setManagedObjectContext:managedObjectContext];
-    } else if ([[segue identifier] isEqualToString:@"toLoc"]){
-        locationTable *lT = [segue destinationViewController];
-        [lT setManagedObjectContext:managedObjectContext];
-    }
-
+    } 
 }
 
 @end

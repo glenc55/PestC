@@ -11,11 +11,17 @@
 @implementation lineSplit
 @synthesize myPath=_myPath;
 @synthesize vertLine=_vertLine;
+@synthesize contr,test, whiteBox;
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor=[UIColor clearColor];
+        contr=[[UIBezierPath alloc] init];
+        test=[[UIBezierPath alloc] init];
+        contr=[UIBezierPath bezierPathWithRect:CGRectMake(0,174, 160, 242)];
+        test=[UIBezierPath bezierPathWithRect:CGRectMake(160, 174, 160, 242)];
+        
         _myPath=[[UIBezierPath alloc] init];
         _myPath.lineWidth=2;
         [_myPath moveToPoint:CGPointMake(160, 174)];
@@ -37,6 +43,13 @@
     [[UIColor blackColor] setStroke];
     [_myPath stroke];
     [_vertLine stroke];
+    [[UIColor cyanColor] setFill];
+    [contr fillWithBlendMode:kCGBlendModeDarken alpha:0.1];
+    [[UIColor greenColor] setFill];
+    [test fillWithBlendMode:kCGBlendModeDarken alpha:0.1];
+    [[UIColor whiteColor] setFill];
+    [whiteBox fillWithBlendMode:kCGBlendModeLighten alpha:1.0];
+        
     // Drawing code
 }
 
@@ -70,7 +83,17 @@
     _vertLine=[[UIBezierPath alloc] init];
     [_vertLine moveToPoint:CGPointMake(0,y)];
     [_vertLine addLineToPoint:CGPointMake(320, y)];
-
+    contr=[[UIBezierPath alloc] init];
+    test=[[UIBezierPath alloc] init];
+    contr=[UIBezierPath bezierPathWithRect:CGRectMake(0,y,x , 416-y)];
+    test=[UIBezierPath bezierPathWithRect:CGRectMake(x, y,320-x, 416-y)];
+    if (x!=0 && x!=320 && y!=174){
+     whiteBox=[[UIBezierPath alloc] init];
+        whiteBox=[UIBezierPath bezierPathWithRect:CGRectMake(0, 174,320 ,y-174)];
+    }else{
+        whiteBox=[[UIBezierPath alloc] init];
+    }
+    
     [self setNeedsDisplay];
     
 }

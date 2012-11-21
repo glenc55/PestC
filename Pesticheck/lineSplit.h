@@ -12,8 +12,12 @@
 
 @interface lineSplit : UIView{
     CGPoint point;
+    NSAttributedString * currentText;
 }
+@property (strong) UIBezierPath *whiteBox;
 @property (strong) UIBezierPath *myPath;
 @property (strong) UIBezierPath *vertLine;
+@property (strong) UIBezierPath *contr;
+@property (strong) UIBezierPath *test;
 
 @end
