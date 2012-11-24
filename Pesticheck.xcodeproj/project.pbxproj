@@ -11,7 +11,6 @@
 		710A924415CAF61B000E5528 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710A924315CAF61B000E5528 /* CoreLocation.framework */; };
 		710A924615CAF621000E5528 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710A924515CAF621000E5528 /* AssetsLibrary.framework */; };
 		710A924B15CAFCF5000E5528 /* DisplayMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A924815CAFCF5000E5528 /* DisplayMap.m */; };
-		710A924C15CAFCF5000E5528 /* mapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A924A15CAFCF5000E5528 /* mapView.m */; };
 		7113F59D163485000092915A /* checkmark2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7113F59C163485000092915A /* checkmark2.png */; };
 		71223F5B16222C3B000A5003 /* commentaryPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 71223F5A16222C3B000A5003 /* commentaryPage.m */; };
 		71223F5F16222E08000A5003 /* splitTextBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 71223F5E16222E08000A5003 /* splitTextBox.m */; };
@@ -36,6 +35,7 @@
 		71D4072B15ACACA800764CF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D4072A15ACACA800764CF5 /* AppDelegate.m */; };
 		71D4072E15ACACA800764CF5 /* Pesticheck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71D4072C15ACACA800764CF5 /* Pesticheck.xcdatamodeld */; };
 		71D4073515ACACBE00764CF5 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D4073415ACACBE00764CF5 /* Storyboard.storyboard */; };
+		71EE9C7916614E7F00126B00 /* mapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EE9C7816614E7F00126B00 /* mapView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +44,6 @@
 		710A924515CAF621000E5528 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		710A924715CAFCF5000E5528 /* DisplayMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisplayMap.h; path = "../../Image Analysis/Image Analysis/DisplayMap.h"; sourceTree = "<group>"; };
 		710A924815CAFCF5000E5528 /* DisplayMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DisplayMap.m; path = "../../Image Analysis/Image Analysis/DisplayMap.m"; sourceTree = "<group>"; };
-		710A924915CAFCF5000E5528 /* mapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mapView.h; path = "../../Image Analysis/Image Analysis/mapView.h"; sourceTree = "<group>"; };
-		710A924A15CAFCF5000E5528 /* mapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mapView.m; path = "../../Image Analysis/Image Analysis/mapView.m"; sourceTree = "<group>"; };
 		7113F59C163485000092915A /* checkmark2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark2.png; sourceTree = "<group>"; };
 		71223F5916222C3B000A5003 /* commentaryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commentaryPage.h; sourceTree = "<group>"; };
 		71223F5A16222C3B000A5003 /* commentaryPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commentaryPage.m; sourceTree = "<group>"; };
@@ -82,6 +80,8 @@
 		71D4072A15ACACA800764CF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		71D4072D15ACACA800764CF5 /* Pesticheck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pesticheck.xcdatamodel; sourceTree = "<group>"; };
 		71D4073415ACACBE00764CF5 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		71EE9C7716614E7F00126B00 /* mapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mapView.h; path = ../mapView.h; sourceTree = "<group>"; };
+		71EE9C7816614E7F00126B00 /* mapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mapView.m; path = ../mapView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +148,6 @@
 				71223F5A16222C3B000A5003 /* commentaryPage.m */,
 				710A924715CAFCF5000E5528 /* DisplayMap.h */,
 				710A924815CAFCF5000E5528 /* DisplayMap.m */,
-				710A924915CAFCF5000E5528 /* mapView.h */,
-				710A924A15CAFCF5000E5528 /* mapView.m */,
 				71B1A9FA15B84B8B0045D907 /* dataView.h */,
 				71B1A9FB15B84B8B0045D907 /* dataView.m */,
 				71ADD1D315B70E3300DBB294 /* tableView.h */,
@@ -158,6 +156,8 @@
 				7158C95515AE5FC40090A1C3 /* mainView.m */,
 				712D3B35163F1F2C0081FBC0 /* Pixel.h */,
 				712D3B36163F1F2C0081FBC0 /* Pixel.m */,
+				71EE9C7716614E7F00126B00 /* mapView.h */,
+				71EE9C7816614E7F00126B00 /* mapView.m */,
 				7145CCCB15BF13040062731F /* lineSplit.h */,
 				7145CCCC15BF13040062731F /* lineSplit.m */,
 				71D4072C15ACACA800764CF5 /* Pesticheck.xcdatamodeld */,
@@ -260,11 +260,11 @@
 				71B1A9FC15B84B8B0045D907 /* dataView.m in Sources */,
 				7145CCCD15BF13040062731F /* lineSplit.m in Sources */,
 				710A924B15CAFCF5000E5528 /* DisplayMap.m in Sources */,
-				710A924C15CAFCF5000E5528 /* mapView.m in Sources */,
 				71223F5B16222C3B000A5003 /* commentaryPage.m in Sources */,
 				71223F5F16222E08000A5003 /* splitTextBox.m in Sources */,
 				7164D591163DDC98007A5C07 /* PestStrip.m in Sources */,
 				712D3B37163F1F2C0081FBC0 /* Pixel.m in Sources */,
+				71EE9C7916614E7F00126B00 /* mapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
