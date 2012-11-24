@@ -132,9 +132,13 @@ bool tookPic;
     int rowC,rowT,colC,colT,count=0,bluePixels=0,bluePixelsT=0;
     float RGB[3], RGBT[3];
     float ref,ratRB;
-    
     int red=0,green=1,blue=2;
 
+    for (int i=0;i<2;i++){
+        RGB[i]=0;
+        RGBT[i]=0;
+    }
+        
     rowC=image1.size.width;
     rowT=image2.size.width;
     colC=image1.size.height;
@@ -147,14 +151,17 @@ bool tookPic;
             Pixel *pixel = [result1 objectAtIndex:count];
             ref=0.3*pixel.red+0.59*pixel.green+0.11*pixel.blue;
             ratRB= pixel.red/pixel.blue;
+          
             if (ref>0.3 && ratRB<0.8 && pixel.red<0.8){
-                
+      
                 RGB[red]+=0.5*(81-100*ratRB)*pixel.red;
                 RGB[blue]+=0.5*(81-100*ratRB)*pixel.blue;
                 RGB[green]+=0.5*(81-100*ratRB)*pixel.green;
                 bluePixels+=0.5*(81-100*ratRB);
+         
             }
-        }
+            }
+        
     }
     for (int i=0;i<colT;i++){
         for (int j=0;j<rowT;j++){
@@ -163,32 +170,32 @@ bool tookPic;
             Pixel *pixel = [result2 objectAtIndex:count];
             ref=0.3*pixel.red+0.59*pixel.green+0.11*pixel.blue;
             ratRB= pixel.red/pixel.blue;
-            if (ref>0.3 && ratRB<0.8 && pixel.red<0.8){
-                
+                       if (ref>0.3 && ratRB<0.8 && pixel.red<0.8){
                 
                 RGBT[red]+=0.5*(81-100*ratRB)*pixel.red;
                 RGBT[blue]+=0.5*(81-100*ratRB)*pixel.blue;
                 RGBT[green]+=0.5*(81-100*ratRB)*pixel.green;
-                
                 bluePixelsT+=0.5*(81-100*ratRB);
-                
-            }
             
-        }
+            }
+           }
+        
     }
-    
+  
     for (int i=0;i<3;i++){
-        if (bluePixelsT!=0){
-            RGBT[i]=(RGBT[i]/bluePixelsT)*255;
-        }else {
+        if (bluePixelsT==0){
             RGBT[i]=0;
-        }
-        if (bluePixels!=0){
-            RGB[i]=(RGB[i]/bluePixels)*255;
         }else {
+            RGBT[i]=(RGBT[i]/bluePixelsT)*255;
+        }
+        if (bluePixels==0){
             RGB[i]=0;
+            
+        }else {
+            RGB[i]=(RGB[i]/bluePixels)*255;
         }
     }
+
     if (bluePixelsT>bluePixels){
         bluePixelsT=bluePixels;
     }
