@@ -15,11 +15,12 @@
 			<key>CFBundleIconFiles</key>
 			<array>
 				<string>wticon1.png</string>
+				<string>wticon2.png</string>
 			</array>
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>Home.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.mcmac.ios.pesticheck</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
